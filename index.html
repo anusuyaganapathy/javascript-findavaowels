@@ -1,0 +1,21 @@
+<script>
+    function findFirstVowel(str) {
+    str = str.toLowerCase();
+    // console.log('str', str);
+    let vowel = ['a', 'e', 'i', 'o', 'u'];
+    let getvowelsData = [];
+    for (i = 0; i < str.length; i++) {
+        for (j = 0; j < vowel.length; j++) {
+            if (str[i] == vowel[j]) {
+                getvowelsData.push(vowel[j]);
+                // console.log('getvowelsData', getvowelsData);
+                console.log('return', str.indexOf(str[i]));
+               return str.indexOf(str[i]);
+
+            }
+        }
+    }
+}
+
+findFirstVowel('hello')
+</script>
